@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+.Auth-App {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #afd4c0;
+    background-image: linear-gradient(99deg, #ff70a6,#ff9770 40%, #ffd670 73%, #e9ff70 );
+    font-family: "Open sans"
+}
+.Auth-Content {
+    width: 30%;
+    height: 30%;
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 14px 28px 0 rgba(0, 0 , 0, 0.25), 0 10px 10px 0 rgba(0, 0, 0, 0.26);
+}
+.Title {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.Helo-Logo {
+    margin: 20px 0 20px 0;
+}
+.Login-Btn {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+    background-image: radial-gradient(circle at 50%-46%, #737373, #402d39);
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+}
+.Login-Btn:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

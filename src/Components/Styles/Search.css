@@ -1,0 +1,167 @@
+.Search-App {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f2f2;
+}
+/* Header Styles */
+.Search-Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(97deg, #ff7a6e, #ff9770);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    position: absolute;
+}
+.Header-Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header-Left>img {
+    height: 25px;
+    margin-left: 20px;
+    width: 30px;
+}
+.Search-Option {
+    height: 25px;
+    margin-left: 20px;
+    width: 30px;
+}
+.Home-Option {
+    height: 25px;
+    margin-left: 20px;
+    width: 30px;
+}
+.Header-Left>p {
+    font-size: 33px;
+}
+.Dash-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.Dash-Link:hover {
+    text-decoration: none;
+    color: white;
+}
+.Logout-Btn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+.Logout-Btn:focus {
+    outline: 0;
+}
+.Logout-Btn:hover {
+    color: white;
+    text-decoration: none;
+}
+/* Search Body */
+.Search-Content{
+    margin-top: 70px;
+    width: 70%;
+    height: auto;
+    background: white;
+    min-height: 100vh;
+  }
+  .Search-Bar{
+    margin-top: 70px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+  }
+  .Search-Bar-Dropdown{
+    width: 140px;
+  }
+  .Search-Input{
+    height: 38px;
+  }
+  .Search-Btns-Container {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    margin-right: 20px;
+  }
+  .Search-btn {
+    text-decoration: none;
+    color: white;
+    width: 45%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+    background-image: radial-gradient(circle at 50%-46%, #737373, #402d39);
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .Reset-Btn {
+    text-decoration: none;
+    color: black;
+    width: 45%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  Search_filtered_users_parent{
+    min-height: 300px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box; 
+  
+  }
+  .Remove-Friend-Btn{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px;
+    background-image: radial-gradient(circle at 50%-46%, #737373, #402d39);
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+    font-size: 16px;
+    height: 35px;
+    margin: 25px;
+    border-radius: 1px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .Remove-Btn-Text{
+    padding: 0px;
+    font-size: 12px;
+  }
+  .Search-Pagenumber-Container {
+    height: 35px;
+    width: 100%;
+    background-image: radial-gradient(circle at 50% -46%, #ff9770, #ff7a6e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .Search-Users-List {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+  }

@@ -1,0 +1,244 @@
+.Dash-App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f2f2;
+}
+a{
+    text-decoration: none;
+    color: white;
+  }
+a:hover {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+  }
+/* Header Styles */
+.Dash-Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(97deg, #ff7a6e, #ff9770);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    position: absolute;
+}
+.Header-Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Header-Left>img {
+    height: 25px;
+    margin-left: 20px;
+    width: 30px;
+}
+.Search-Option {
+    height: 25px;
+    margin-left: 20px;
+    width: 30px;
+}
+.Header-Left>p {
+    font-size: 33px;
+}
+.Dash-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.Dash-Link:hover {
+    text-decoration: none;
+    color: white;
+}
+.Logout-Btn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+.Logout-Btn:focus {
+    outline: 0;
+}
+.Logout-Btn:hover {
+    color: white;
+    text-decoration: none;
+}
+/* Render / Logic */
+.Filtered-User {
+    height: 120px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.Filtered-User-Add-Btn {
+    height: 35px;
+    margin: 25px;
+    border-radius: 1px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-image: radial-gradient(circle at 50% -46%, #ff9770, #ff7a6e);
+  }
+  .Filtered-User-Name {
+    width: 20px;
+    height: auto;
+  }
+  .Filtered-User-First-Name,
+  .Filtered-User-Last-Name {
+    padding: 5px;
+  }
+  .Filtered-User-Img-Container {
+    width: 100px;
+    height: 100px;
+  }
+  .Filtered-User-Img {
+    width: 100%;
+    height: 100%;
+  }
+  .Add-Btn-Text {
+    font-size: 12px;
+    padding: 0px;
+  }
+/* User Display Info */
+.Display-User-Content {
+    height: 200px;
+    width: 60%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 6px;
+    margin-top: 76px;
+}
+.User-Content {
+    height: 160px;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.Display-Welcome-Content {
+    height: 160px;
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .Welcome-Text-Content {
+    font-size: 21px;
+    margin: 14px;
+    text-align: none;
+  }
+  .Welcome-Text {
+    height: 100%;
+    font-size: 19px;
+  }
+  
+  /* .User-Img-Content {
+    height: 200px;
+    width: 10%;
+  } */
+  .User-Img {
+    height: 120px;
+    border: 3px solid #ffd670;
+    margin-right: 9px;
+  }
+  .Edit-Btn {
+    height: 30px;
+    width: 100%;
+    margin: 9px;
+    position: relative;
+    top: 8px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    border-radius: 4px;
+    margin-bottom: 65px;
+    background-image: radial-gradient(circle at 50% 0,#fff,#f1eceb);
+  }
+  .User-Text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+/* Recommended Users */
+.Display-Recommended-Friends-Content {
+    width: 59%;
+    height: auto;
+    min-height: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    background: white;
+}
+.Recommended-Friends-Header {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.Recommended-Friends-Title {
+    font-size: 22px;
+    margin: 5px;
+}
+.Users-List {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.Pagenumbers {
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 0.3em;
+    padding: 10px;
+}
+.Pagenumbers>li {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 20px;
+}
+.Pagenumbers>li:hover {
+    display: inline;
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+.Pagenumber-Container {
+    height: 50px;
+    width: 59%;
+    background-image: radial-gradient(circle at 50% -46%, #ff9770, #ff7a6e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
