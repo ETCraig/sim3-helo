@@ -122,7 +122,7 @@ class Dashboard extends Component {
                 <div className='Display-User-Content'>
                     <div className='User-Content'>
                         <div className='User-Img-Content'>
-                            <img src={this.state.user.profile_image} alt='Profile' className='User-Img' />
+                            <img src={this.state.user.profile_picture} alt='Profile' className='User-Img' />
                         </div>
                         <div className='User-Info-content'>
                             <span className='User-Text'>{this.state.user.first_name}</span>

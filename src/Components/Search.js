@@ -18,7 +18,7 @@ class Search extends Component {
             users: [],
             filteredUsers: [],
             currentPage: 1,
-            usersPerPage: 4,
+            usersPerPage: 24,
             filteredClicked: false
         }
         this.handleClick = this.handleClick.bind(this);

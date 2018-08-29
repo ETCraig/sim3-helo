@@ -35,6 +35,8 @@ app.get('/auth/callback', async (req, res) => {
     
     let userData = await axios.get(`https://${REACT_APP_DOMAIN}/userinfo?access_token=${responseWithToken.data.access_token}`);
     
+    let picture = `https://robohash.org/${Math.floor((Math.random() + 1) * 1000)}`;
+
     const db = req.app.get('db');
     let {sub, pic, first, last} = userData.data;
     let userExists = await db.Find_User([userData.data.sub]);
@@ -44,6 +46,7 @@ app.get('/auth/callback', async (req, res) => {
         res.redirect('http://localhost:3000/#/Dashboard');
     } else {
         console.log('newUser');
+        let pic = picture;
         db.Create_User([sub, pic, first, last]).then(createdUser => {
             req.session.user = createdUser[0];
             res.redirect('http://localhost:3000/#/Dashboard');

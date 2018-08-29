@@ -4,3 +4,5 @@ SELECT * FROM (
     friendship.friend_id = helo_users.id
     WHERE id != $1
 ) AS derivedTable
+
+-- Sub Query
